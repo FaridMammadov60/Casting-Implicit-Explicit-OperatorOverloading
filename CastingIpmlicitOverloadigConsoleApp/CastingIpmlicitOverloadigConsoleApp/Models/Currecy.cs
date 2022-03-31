@@ -4,6 +4,6 @@
     {
         USD = 1,
         EURO = 2,
-        TRY = 4
+        TRY = 3
     }
 }
