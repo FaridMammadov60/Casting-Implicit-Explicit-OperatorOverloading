@@ -15,6 +15,14 @@ namespace CastingIpmlicitOverloadigConsoleApp
             Console.WriteLine(Exchange(Currecy.EURO, azn2));
             Console.WriteLine(Exchange(Currecy.TRY, azn3));
             #endregion
+            #region Celsius and Kelvin
+            Celsius celsius = new Celsius(2);
+            Kelvin kelvin = new Kelvin(264);
+            Celsius celsius1 = kelvin;
+            Console.WriteLine(celsius1.Degree);
+            #endregion
+
+
 
 
         }
@@ -26,12 +34,12 @@ namespace CastingIpmlicitOverloadigConsoleApp
             {
                 if (currecy is Currecy.EURO)
                 {
-                    result = azn * 0.531915;
+                    result = azn * 0.53;
                     return result;
                 }
                 else if (currecy is Currecy.USD)
                 {
-                    result = azn * 05882352941176471;
+                    result = azn * 0.59;
                 }
                 else
                 {
