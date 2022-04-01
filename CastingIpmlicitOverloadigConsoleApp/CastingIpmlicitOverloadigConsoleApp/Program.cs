@@ -90,7 +90,7 @@ namespace CastingIpmlicitOverloadigConsoleApp
                     if (currecy is Currecy.EURO)
                     {
                         result = azn * 0.53;
-                        return result;
+                     
                     }
                     else if (currecy is Currecy.USD)
                     {
@@ -100,7 +100,7 @@ namespace CastingIpmlicitOverloadigConsoleApp
                     {
                         result = azn * 8.5;
                     }
-
+                    return result;
                 }
                 throw new Exception("Pul vahidi deyil");
             }
